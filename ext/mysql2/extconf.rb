@@ -67,7 +67,7 @@ if RbConfig::MAKEFILE_CONFIG['CC'] =~ /gcc/
   $CFLAGS << ' -Wall -funroll-loops'
 
   if hard_mysql_path = $libs[%r{-L(/[^ ]+)}, 1]
-    $LDFLAGS << " -Wl,-rpath,#{hard_mysql_path}"
+#    $LDFLAGS << " -Wl,-rpath,#{hard_mysql_path}"
   end
 end
 
